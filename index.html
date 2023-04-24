@@ -17,6 +17,7 @@
             margin: 0;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,15 @@
     <div style="font-size: 12em; text-align: center;">
         <img src="img/main.jpg" style="max-width: 100%;" />
     </div>
+    
+    <script>
+        $.ajax({
+            url: 'https://localhost:8888/reader/serial',
+            success: res => {
+                console.log(res);
+            }
+        });
+    </script>
 
 </body>
 
